@@ -141,3 +141,43 @@ void DisplayMeasurement2(double measurement)
 DisplayMeasurement2(-4); // Output: Measured value is -4, too low
 DisplayMeasurement2(20); // Output: Measured value is 20, too high
 DisplayMeasurement2(double.NaN); // Output: No measurement
+
+
+for (int k = 0; k < 5; i++)
+{
+    Console.WriteLine(k);
+}
+
+
+List<int> numbers = new() { 1, 2, 3, 4, 5 };
+
+foreach(int numb in numbers)
+{
+    Console.WriteLine($"{numb}");
+}
+
+int n = 0;
+do
+{
+    Console.WriteLine(n);
+    n++;
+} while(n < 5) ;
+
+
+int nm2 = 0;
+
+while(nm2 < 5)
+{
+    Console.WriteLine(nm2);
+    nm2++;
+}
+
+string[] names = { "Adam", "Barry", "Charlie" };
+
+string GetName(int id)
+{
+    if (id < names.Length)
+        return names[id];
+    else
+        return string.Empty;
+}
