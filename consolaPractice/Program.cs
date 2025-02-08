@@ -118,3 +118,26 @@ void DisplayCharacter(char c)
 }
 
 DisplayCharacter('A'); // Output: Uppercase A
+
+void DisplayMeasurement2(double measurement)
+{
+    switch (measurement)
+    {
+        case < 0.0:
+            Console.WriteLine($"Measured value id {measurement}; too low");
+            break;
+        case > 15.0:
+            Console.WriteLine($"Measured value id {measurement}; too high");
+            break;
+        case double.NaN:
+            Console.WriteLine("No measurement");
+            break;
+        default:
+            Console.WriteLine($"Measured value is {measurement}");
+            break;
+    }
+}
+
+DisplayMeasurement2(-4); // Output: Measured value is -4, too low
+DisplayMeasurement2(20); // Output: Measured value is 20, too high
+DisplayMeasurement2(double.NaN); // Output: No measurement
